@@ -10,14 +10,6 @@ import (
 	"github.com/voje/stayinshape/golang/restcheck/models"
 )
 
-type CustomError struct{}
-	ProblemDetails *models.ProblemDetails
-	errStr string
-
-func (ce *CustomError) Error() string {
-	return ce.errStr
-}
-
 func main() {
 	// We'll be using models.NfProfile.NfType for demonstration
 
